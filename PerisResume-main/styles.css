@@ -1,0 +1,254 @@
+/* Global Styles */
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #3498DB;
+    --accent-color: #1ABC9C;
+    --text-color: #333;
+    --light-bg: #f9f9f9;
+    --border-color: #eaeaea;
+    --section-spacing: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1.5rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: inline;
+    margin-right: 0.3rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-position: inside;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+section {
+    margin-bottom: var(--section-spacing);
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Summary Section */
+.summary {
+    margin-bottom: 1.5rem;
+}
+
+/* Qualifications Section */
+.qualification-item, .accomplishment-item, .tech-item {
+    margin-bottom: 0.75rem;
+}
+
+.qualification-item p, .accomplishment-item p, .tech-item p {
+    display: inline;
+}
+
+/* Experience Section */
+.job {
+    margin-bottom: 1.5rem;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.job-title-company {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-title-company h3 {
+    display: block;
+    margin-bottom: 0;
+}
+
+.job-title-company h4 {
+    font-style: normal;
+    margin-top: 0.2rem;
+}
+
+.job-duration {
+    font-weight: normal;
+}
+
+.job-description p {
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+/* Past Experience Section */
+.past-jobs {
+    margin-top: 1rem;
+}
+
+.past-job-row {
+    display: flex;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.past-job-company {
+    width: 15%;
+    font-weight: 600;
+}
+
+.past-job-title {
+    width: 45%;
+    padding-left: 0.5rem;
+}
+
+.past-job-duration {
+    width: 40%;
+    text-align: right;
+}
+
+/* Additions Section */
+.addition-item {
+    margin-bottom: 1rem;
+}
+
+.addition-item h3 {
+    display: inline;
+    margin-right: 0.3rem;
+}
+
+.addition-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.addition-item li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+}
+
+.download-pdf a {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.download-pdf a:hover {
+    background-color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .job-header {
+        flex-direction: column;
+    }
+    
+    .job-duration {
+        margin-top: 0.5rem;
+    }
+    
+    .past-job-row {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+    
+    .past-job-company, .past-job-title, .past-job-duration {
+        width: 100%;
+        padding-left: 0;
+        text-align: left;
+        margin-bottom: 0.25rem;
+    }
+} 
